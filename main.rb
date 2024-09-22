@@ -9,10 +9,11 @@ until game_board.winner == true
   game_board.board.each { |row| puts "#{row}" }
 
   loop do
-    puts 'PLAYER 1: Insert a row coordinate'
+    puts "\nPLAYER 1: Insert a row coordinate\n\n"
     row_coordinate = gets.chomp
-    puts 'PLAYER 1: Insert a column coordinate'
+    puts "\nPLAYER 1: Insert a column coordinate\n\n"
     column_coordinate = gets.chomp
+    puts "\n"
 
     if game_board.board[row_coordinate.to_i][column_coordinate.to_i] == ' '
       player_one.mark(game_board.board[row_coordinate.to_i][column_coordinate.to_i])
@@ -20,25 +21,26 @@ until game_board.winner == true
       game_board.check_for_draw
 
       if game_board.draw
-        puts 'Draw!'
+        puts "\nDraw!\n\n"
         break
       elsif game_board.winner
-        puts 'PLAYER 1 wins!'
+        puts "\nPLAYER 1 wins!\n\n"
         break
       end
       break
     else
-      puts 'That position is not available'
+      puts "\nThat position is not available\n\n"
     end
   end
   break if game_board.winner || game_board.draw
 
   game_board.board.each { |row| puts "#{row}" }
+  puts "\n"
 
   loop do
-    puts 'PLAYER 2: Insert a row coordinate'
+    puts "\nPLAYER 2: Insert a row coordinate\n\n"
     row_coordinate = gets.chomp
-    puts 'PLAYER 2: Insert a column coordinate'
+    puts "\nPLAYER 2: Insert a column coordinate\n\n"
     column_coordinate = gets.chomp
 
     if game_board.board[row_coordinate.to_i][column_coordinate.to_i] == ' '
@@ -47,15 +49,15 @@ until game_board.winner == true
       game_board.check_for_draw
 
       if game_board.draw
-        puts 'Draw!'
+        puts "\nDraw!\n\n"
         break
       elsif game_board.winner
-        puts 'PLAYER 2 wins!'
+        puts "\nPLAYER 2 wins!\n\n"
         break
       end
       break
     else
-      puts 'That position is not available'
+      puts "\nThat position is not available\n\n"
     end
   end
   break if game_board.winner || game_board.draw
