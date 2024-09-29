@@ -50,5 +50,3 @@ The objective was to build a Tic Tac Toe game where two players could alternate 
 ## 💡 Acknowledgments
 
 - **The Odin Project**: For providing the project outline and guidance.
-
-<video loop autoplay src="https://cdn.coverr.co/videos/coverr-gloomy-city-at-night-6099/720p.mp4">
