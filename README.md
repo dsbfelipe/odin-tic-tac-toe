@@ -7,16 +7,6 @@
 
 This project is part of The Odin Project's Ruby course. The goal of this assignment was to create a command-line version of the classic game Tic Tac Toe. Two human players take turns marking a 3x3 grid, and the game checks for a winner or a draw after each move. This project was a great way to apply object-oriented programming (OOP) concepts like classes, instance variables, and methods.
 
-<details open>
-<summary>
- Screenshots
-</summary> <br />
-    
-<p align="center">
-    <img src="screenshots/screenshot.png"/>
-
-</details>
-
 ## 📝 Project Objective
 
 The objective was to build a Tic Tac Toe game where two players could alternate turns marking the board, and the game would check for a win or draw after each move. By structuring the game into distinct classes, the project emphasized clean separation of responsibilities and maintaining the game loop until a victory or draw condition was met.
